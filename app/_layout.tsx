@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
   useEffect(() => {
       const prepare = async () => {
