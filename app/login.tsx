@@ -75,36 +75,15 @@ export default function Register() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBack text="Sign Up"></HeaderBack>
+      <HeaderBack text="Sign In"></HeaderBack>
       <View style={{alignItems: "center"}}>
         <View style={styles.inputFields}>
-          <TextBox label="Name" placeholder="John Doe"></TextBox>
           <TextBox label="E-mail" placeholder="example@gmail.com"></TextBox>
           <TextBox label="Password" safeInput={true}></TextBox>
-          <View style={styles.termsPrivacyView}>
-            <AdvancedCheckbox
-              value={checked}
-              onValueChange={(value) =>
-                setChecked(typeof value === "boolean" ? value : false)
-              }
-              checkedColor="#007AFF"
-              uncheckedColor="#ccc"
-              checkedImage={require("@/assets/icons/checked.png")}
-              animationType="fade"
-              size={24}
-            />
-            <Text style={styles.normalText}>
-              I agree with{" "}
-              <Link style={styles.normalTextBolder} href="/">
-                Terms
-              </Link>{" "}
-              &{" "}
-              <Link style={styles.normalTextBolder} href="/">
-                Privacy
-              </Link>
-            </Text>
+          <View style={{marginTop: 43}}>
+            <BlueButton label="Sign In"></BlueButton>
           </View>
-          <BlueButton label="Sign Up"></BlueButton>
+         
         </View>
       
       <View style={styles.otherOptions}>
@@ -112,7 +91,7 @@ export default function Register() {
           <View
             style={{ height: 1, width: 90, backgroundColor: "#DADADA" }}
           ></View>
-          <Text style={styles.normalTextBold}>Or sign up with</Text>
+          <Text style={styles.normalTextBold}>Or sign in with</Text>
           <View
             style={{ height: 1, width: 90, backgroundColor: "#DADADA" }}
           ></View>
@@ -126,9 +105,9 @@ export default function Register() {
         </View>
         <View style={{marginTop: 50}}>
           <Text style={styles.normalText}>
-                Already have an account?{" "}
-                <Link style={styles.normalTextBolder} href="/login">
-                  Sign In
+                Don't have an account?{" "}
+                <Link style={styles.normalTextBolder} href="/register">
+                  Sign Up
                 </Link>
           </Text>
         </View>

@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     pressableStyling: { 
         flexDirection: "row", 
         alignItems: "center", 
-        gap:8, 
+        gap:15, 
         marginBottom: 20 
     },
     imageStyling: {

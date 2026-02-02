@@ -23,9 +23,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "500",
   },
-  viewStyling: {
-    padding: 10,
-  },
 });
 
 interface TextBoxProps {
@@ -38,7 +35,7 @@ interface TextBoxProps {
 
 export function TextBox({ label, onChangeText, text, placeholder, safeInput}: TextBoxProps) {
   return (
-    <View style={styles.viewStyling}>
+    <View>
       <Text style={styles.textStyling}>{label}</Text>
       <TextInput
         style={styles.textBoxStyling}

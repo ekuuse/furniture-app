@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     textAlignVertical: "center",
     color: "#4F63AC",
-    marginTop: 10,
   },
 });
 
@@ -19,9 +18,7 @@ interface BlueClickableLinkProps {
 
 export function BlueClickableLink({ label, onPress }: BlueClickableLinkProps) {
   return (
-    <Pressable onPress={onPress}>
-      <Text style={styles.bclStyling}>{label}</Text>
-    </Pressable>
+      <Text style={styles.bclStyling} onPress={onPress}>{label}</Text>
   );
 }
 
