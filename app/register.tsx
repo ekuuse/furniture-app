@@ -104,7 +104,7 @@ export default function Register() {
               </Link>
             </Text>
           </View>
-          <BlueButton label="Sign Up"></BlueButton>
+          <BlueButton label="Sign Up" onPress={() => router.push("/app")}></BlueButton>
         </View>
       
       <View style={styles.otherOptions}>

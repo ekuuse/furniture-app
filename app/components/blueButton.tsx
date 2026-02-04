@@ -1,18 +1,20 @@
 import { Text, Pressable, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  blueButtonStyling: {
-    fontFamily: "Montserrat",
-    fontSize: 16,
-    fontWeight: "700",
-    textAlign: "center",
-    textAlignVertical: "center",
-    color: "#ffffff",
+  buttonStyling: {
     backgroundColor: "#4F63AC",
-    padding: 10,
     borderRadius: 8,
     width: 303,
     height: 60,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  buttonTextStyling: {
+    fontFamily: "Montserrat",
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#ffffff",
   },
 });
 
@@ -23,8 +25,8 @@ interface BlueButtonProps {
 
 export function BlueButton({ label, onPress }: BlueButtonProps) {
   return (
-    <Pressable onPress={onPress}>
-      <Text style={styles.blueButtonStyling}>{label}</Text>
+    <Pressable style={styles.buttonStyling} onPress={onPress}>
+      <Text style={styles.buttonTextStyling}>{label}</Text>
     </Pressable>
   );
 }

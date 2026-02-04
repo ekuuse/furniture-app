@@ -81,9 +81,8 @@ export default function Register() {
           <TextBox label="E-mail" placeholder="example@gmail.com"></TextBox>
           <TextBox label="Password" safeInput={true}></TextBox>
           <View style={{marginTop: 43}}>
-            <BlueButton label="Sign In"></BlueButton>
+            <BlueButton label="Sign In" onPress={() => router.push("/app")}></BlueButton>
           </View>
-         
         </View>
       
       <View style={styles.otherOptions}>
