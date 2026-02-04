@@ -12,6 +12,7 @@ export default function RootLayout() {
           await Font.loadAsync({
             DM_Sans: require("@/assets/fonts/DMSans.ttf"),
             Montserrat: require("@/assets/fonts/Montserrat.ttf"),
+            NunitoSans: require("@/assets/fonts/NunitoSans.ttf"),
           });
         } catch (e) {
           console.warn(e);
