@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     headerStyling: {
       justifyContent: "flex-start",
       flexDirection: "row",
-      alignContent: "space-between",
+      alignContent: "center",
       alignItems: "center",
     },
     headerTextStyling: {
@@ -20,16 +20,16 @@ const styles = StyleSheet.create({
         fontWeight: "700",
         fontSize: 16,
         textAlign: "center",
+        marginBottom: 34,
     },
     searchIcon: {
       width: 30,
       height: 30,
-      position: "absolute",
-      justifyContent: "flex-start"
     },
     categoriesContainer: {
       flexDirection: "row",
       gap: 25,
+      marginBottom: 20,
     }
 });
 
@@ -40,8 +40,8 @@ interface HomeTabProps {
 export function HomeTab({ text }: HomeTabProps) {
   return (
     <SafeAreaView style={styles.container}>
-      <Image style={styles.searchIcon} source={require("@/assets/icons/search.png")} />
       <View style={styles.headerStyling}>
+        <Image style={styles.searchIcon} source={require("@/assets/icons/search.png")} />
         <Text style={styles.headerTextStyling}>Find All You Need</Text>
       </View>
       <View style={styles.categoriesContainer}>
